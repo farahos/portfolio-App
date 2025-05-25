@@ -7,17 +7,17 @@ function Projects(){
             link: "https://github.com/farah/apartment-rental",
         },
         {
-            title: "Typing Syystem",
-            description: "Web application for managing apartment rentals using React, Tailwind CSS, Spring Boot & PostgreSQL.",
+            title: "Typing System",
+            description: "Web application for managing Typping System using React, Tailwind CSS, Spring Boot & mySql.",
             link: "https://github.com/farah/apartment-rental",
         },
           {
-            title: "Typing Syystem",
-            description: "Web application for managing apartment rentals using React, Tailwind CSS, Spring Boot & PostgreSQL.",
+            title: "Bank System",
+            description: "Web application for managing bank system using c# & Sql server, .",
             link: "https://github.com/farah/apartment-rental",
         },
           {
-            title: "Typing Syystem",
+            title: "School Syystem",
             description: "Web application for managing apartment rentals using React, Tailwind CSS, Spring Boot & PostgreSQL.",
             link: "https://github.com/farah/apartment-rental",
         },
