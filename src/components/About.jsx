@@ -1,7 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 const About = () =>{
     return (
         <>
+
        <section id="About" className="bg-gray-100 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl mb-6 text-blue-700 font-bold ">About Me </h2>
