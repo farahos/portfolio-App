@@ -1,34 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+const STORAGE_KEY = "chatMessages";
 
 const MessageModal = ({ onClose }) => {
   const [message, setMessage] = useState("");
   const [sentMessages, setSentMessages] = useState([]);
 
-  const handleSend = () => {
-    if (message.trim() !== "") {
-      setSentMessages([...sentMessages, message]);
-      setMessage("");
+  // Markii modal la furo, load fariimaha kaydsan
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      setSentMessages(JSON.parse(saved));
     }
+  }, []);
+
+  // Markasta oo sentMessages isbeddel sameeyo, kaydi localStorage
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(sentMessages));
+  }, [sentMessages]);
+
+  const handleSend = () => {
+    if (message.trim() === "") return;
+    const newMsgs = [...sentMessages, message.trim()];
+    setSentMessages(newMsgs);
+    setMessage("");
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-md h-[80vh] flex flex-col relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white rounded-lg shadow-lg w-full max-w-md h-[80vh] flex flex-col">
         {/* Header */}
         <div className="px-4 py-3 border-b flex justify-between items-center">
           <h3 className="text-lg font-semibold">Chat with Farah</h3>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-red-500 text-xl"
-          >
+          <button onClick={onClose} className="text-gray-500 hover:text-red-500 text-xl">
             ×
           </button>
         </div>
 
-        {/* Chat Messages */}
+        {/* Messages List */}
         <div className="flex-1 overflow-y-auto p-4 space-y-2">
-          {sentMessages.map((msg, index) => (
-            <div key={index} className="text-sm bg-gray-100 p-2 rounded">
+          {sentMessages.map((msg, i) => (
+            <div key={i} className="bg-gray-100 p-2 rounded">
               {msg}
             </div>
           ))}
