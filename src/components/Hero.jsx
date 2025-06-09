@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from "react";
+import farahoz from "../assets/FarahCv.pdf";
+
 
 const Hero = () =>{
     return (
@@ -12,7 +14,7 @@ const Hero = () =>{
           <div className='flex justify-center gap-5'>
 
           <button className="bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 px-6 py-3 transition duration-300"><Link to="/contacts">Contact Me</Link> </button>
-         <button className="bg-gray-200 text-black font-semibold rounded-full hover:bg-gray-400 px-6 py-3 transition duration-300">Download Cv</button>
+         <button className="bg-gray-200 text-black font-semibold rounded-full hover:bg-gray-400 px-6 py-3 transition duration-300"><a href={farahoz} download="FarahCv.pdf">Download Cv</a></button>
           </div>
           </div>
 
