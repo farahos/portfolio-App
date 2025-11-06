@@ -45,7 +45,7 @@ const About = () => {
                         <div className="w-24 h-1 bg-gradient-to-r from-gray-400 to-gray-600 dark:from-gray-500 dark:to-gray-300 mx-auto rounded-full"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Column - Content */}
                         <div className={`space-y-6 transition-all duration-1000 ease-out delay-300 transform ${
                             isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
