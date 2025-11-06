@@ -110,10 +110,10 @@ const Hero = () => {
                                 <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">5+</div>
                                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
                             </div>
-                            <div className="text-center">
+                            {/* <div className="text-center">
                                 <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">1000+</div>
                                 <div className="text-sm text-gray-600 dark:text-gray-400">Students</div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
