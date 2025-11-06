@@ -80,7 +80,7 @@ const About = () => {
                             isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
                         }`}>
                             {/* Stats Grid */}
-                            <div className="grid grid-cols-2 gap-6">
+                            <div className="grid grid-cols-3 gap-6">
                                 {stats.map((stat, index) => (
                                     <div 
                                         key={index}
