@@ -75,7 +75,7 @@ const Contact = () => {
             ),
             label: "YouTube",
             value: "My Channel",
-            link: "https://youtube.com",
+            link: "https://youtube.com/@engfarahoz?si=BpXWWCyuPZRuYucE",
             color: "bg-red-100 text-red-600 dark:bg-red-900 dark:text-red-300"
         },
         {
@@ -86,7 +86,7 @@ const Contact = () => {
             ),
             label: "LinkedIn",
             value: "linkedin.com/in/farah",
-            link: "https://linkedin.com/in/farah",
+            link :"https://www.linkedin.com/in/abdullahi-abdirzak-hassan-1918b431b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
             color: "bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-300"
         }
     ];
