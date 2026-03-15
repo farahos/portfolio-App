@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
+import Landing from "./components/Landing";
 
 import Home from "./components/Home";
 
@@ -49,6 +50,7 @@ const App = () => {
                         <Route path="/Contacts" element={<Contact />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/Skills" element={<Skills />} />
+                        <Route path="/Landing" element={<Landing />} />
                     </Routes>
                 </main>
                 <Footer />
