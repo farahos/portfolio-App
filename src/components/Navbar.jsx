@@ -19,22 +19,14 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    // Check system preference for dark mode
-    useEffect(() => {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            toggleDarkMode(true);
-            document.documentElement.classList.add('dark');
-        }
-    }, []);
-
     const navItems = [
         { path: "/", label: "Home" },
        
         { path: "/About", label: "About" },
         { path: "/Skills", label: "Skills" },
         { path: "/Projects", label: "Projects" },
-        { path: "/Contacts", label: "Contact" }
+        { path: "/Contacts", label: "Contact" },
+        { path: "/Landing", label: "My App" }
     ];
 
     return (
