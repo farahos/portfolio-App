@@ -8,7 +8,7 @@ import Contact from "./components/Contacts";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Landing from "./components/Landing";
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import Home from "./components/Home";
 
 const App = () => {
@@ -44,6 +44,7 @@ const App = () => {
                             <Route path="/projects" element={<Projects />} />
                             <Route path="/Skills" element={<Skills />} />
                             <Route path="/Landing" element={<Landing />} />
+                            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                         </Routes>
                     </main>
                     <Footer />

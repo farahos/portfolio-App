@@ -118,6 +118,9 @@ const Footer = () => {
                                         >
                                             {link.name}
                                         </Link>
+                                        <Link to="/privacy-policy" className="hover:text-blue-500 transition">
+  Privacy Policy
+</Link>
                                     </li>
                                 ))}
                             </ul>
